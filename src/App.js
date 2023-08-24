@@ -1,23 +1,53 @@
+import {useState} from 'react'
 import './App.css'
 
 const App = () => {
-  const re = 0
+  const [pair, setPair] = useState('2')
+
+  const getTotalAmount = () => {
+    let amount
+    if (pair === '1') {
+      amount = 195
+    } else if (pair === '2') {
+      amount = 345
+    } else if (pair === '3') {
+      amount = 528
+    }
+    return amount
+  }
+
   return (
     <div className="container">
       <div className="form-container">
         <h1 className="heading-text">Bundle & Save</h1>
-        <div className="input-container">
+        <div
+          className={
+            pair === '1'
+              ? 'input-container selected-input-container'
+              : 'input-container'
+          }
+        >
           <div className="input-value-container">
-            <input name="pair" className="input-item" type="radio" value="1" />
+            <input
+              onChange={e => setPair(e.target.value)}
+              name="pair"
+              className="input-item"
+              type="radio"
+              value="1"
+            />
             <div className="product-price-details-container">
               <p className="quantity-text">1 Pair</p>
-              <p className="price-text">DKK 345.00</p>
+              <p className="price-text">DKK 195.00</p>
             </div>
           </div>
           <p className="discount-text">50% OFF</p>
         </div>
 
-        <div className="pair-2-input-container">
+        <div
+          className={
+            pair === '2' ? 'pair-2-input-container' : 'pair2-container'
+          }
+        >
           <div className="input-2-container">
             <div className="input-value-container">
               <input
@@ -25,7 +55,7 @@ const App = () => {
                 className="input-item"
                 type="radio"
                 value="2"
-                checked
+                onChange={e => setPair(e.target.value)}
               />
               <div className="product-price-details-container">
                 <p className="quantity-text">2 Pair</p>
@@ -74,9 +104,21 @@ const App = () => {
         </div>
         {/* pair -3 */}
 
-        <div className="input-container">
+        <div
+          className={
+            pair === '3'
+              ? 'input-container selected-input-container'
+              : 'input-container'
+          }
+        >
           <div className="input-value-container">
-            <input name="pair" className="input-item" type="radio" value="3" />
+            <input
+              onChange={e => setPair(e.target.value)}
+              name="pair"
+              className="input-item"
+              type="radio"
+              value="3"
+            />
             <div className="product-price-details-container">
               <p className="quantity-text">3 Pair</p>
               <p className="price-text">DKK 528.00</p>
@@ -88,7 +130,7 @@ const App = () => {
         <div className="free-shipping-order-total-container">
           <p className="free-shipping-text">Free 2 Day Shipping</p>
           <p className="total-price-text">
-            Total: <span className="price-text">DKK 360.00 </span>
+            Total: <span className="price-text">DKK {getTotalAmount()} </span>
           </p>
         </div>
         <button className="add-button">+ Add to Cart</button>
