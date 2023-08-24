@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 3.615px;
+  border: 0.904px solid #c8c8c8;
+  background: #fff;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.heading-text {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #cd264f;
+  align-self: center;
+}
+.input-value-container {
+  display: flex;
+}
+.input-item {
+  margin-right: 10px;
+}
+.product-price-details-container {
+  display: flex;
+  flex-direction: column;
+}
+.quantity-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+.price-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 5px;
+}
+.discount-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.pair-2-input-container {
+  border-radius: 3.615px;
+  border: 0.904px solid #f88ca7;
+  background: #fff4f7;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.input-2-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.most-popular-text {
+  color: #cd264f;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.crossed-price-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+.filters-text-container {
+  display: flex;
+  margin-left: 20px;
+}
+.size-filter-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 65.978px;
+}
+.first-prefered-label-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 6px;
+}
+.product-size-color-container {
+  display: flex;
+  margin-bottom: 7px;
+}
+.size-select-element-container {
+  width: 65.978px;
+  height: 25.306px;
+  margin-right: 6px;
+}
+.free-shipping-order-total-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.free-shipping-text {
+  color: #cd264f;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.total-price-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.price-text {
+  font-weight: 700;
+}
+.add-button {
+  border-radius: 4px 4px 4px 0px;
+  background: #cd264f;
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-width: 0px;
+}
+.subsidiary-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  align-self: flex-end;
+}
+.c-text {
+  border: 1px solid #000;
+  border-radius: 26px;
+  height: 15px;
+  width: 15px;
+  font-size: 14px;
+  border-radius: 15px;
+}
