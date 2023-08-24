@@ -77,6 +77,28 @@ body {
   line-height: normal;
   text-transform: uppercase;
 }
+.selected-input-container {
+  border: 0.904px solid #f88ca7;
+  background: #fff4f7;
+}
+.pair-2-input-container {
+  border-radius: 3.615px;
+  border: 0.904px solid #f88ca7;
+  background: #fff4f7;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.pair2-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3.615px;
+  border: 0.904px solid #c8c8c8;
+  background: #fff;
+}
 .pair-2-input-container {
   border-radius: 3.615px;
   border: 0.904px solid #f88ca7;
